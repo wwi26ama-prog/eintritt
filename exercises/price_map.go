@@ -10,5 +10,13 @@ package exercises
 //
 // TODO
 func AdmissionPriceFromMap(age int, prices map[int]int) int {
+	// Hinweis:
+	// Eine Schleife mit `range` über eine Map liefert Schlüssel und Wert,
+	// aber in keiner festen Reihenfolge.
+	// - Sie können sich deshalb nicht darauf verlassen, dass das passende
+	//   Mindestalter als letztes kommt.
+	// - Merken Sie sich neben dem Preis auch das größte bisher passende
+	//   Mindestalter, ähnlich wie beim Maximum einer Liste.
+
 	return 0
 }

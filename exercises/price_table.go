@@ -8,5 +8,11 @@ package exercises
 //
 // TODO
 func AdmissionPriceFromTable(age int, table [][]int) int {
+	// Hinweis:
+	// Gehen Sie vor wie in `AdmissionPriceFromLists`, aber mit einer
+	// Schleife über die Zeilen der Tabelle.
+	// - Jede Zeile ist selbst eine Liste mit zwei Einträgen:
+	//   `row[0]` ist das Mindestalter, `row[1]` der Preis.
+
 	return 0
 }

@@ -12,5 +12,13 @@ package exercises
 //
 // TODO
 func AdmissionPriceFromLists(age int, minAges []int, prices []int) int {
+	// Hinweis:
+	// Gehen Sie die Mindestalter in einer Schleife durch.
+	// - Merken Sie sich in einer Variablen den bisher gültigen Preis.
+	//   Mit welchem Wert muss sie starten?
+	// - Für den Preis zum Mindestalter benötigen Sie den Index.
+	// - Wegen der Sortierung gilt am Ende der Preis des letzten
+	//   Mindestalters, das das Alter nicht übersteigt.
+
 	return 0
 }

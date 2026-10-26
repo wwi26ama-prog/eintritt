@@ -9,8 +9,20 @@ package exercises
 //
 // Die Preise aus `AdmissionPrice` ergeben sich also mit
 // `minAges = []int{0, 6, 18}` und `prices = []int{0, 300, 500}`.
-//
-// TODO
 func AdmissionPriceFromLists(age int, minAges []int, prices []int) int {
-	return 0
+	// Hinweis:
+	// Gehen Sie die Mindestalter in einer Schleife durch.
+	// - Merken Sie sich in einer Variablen den bisher gültigen Preis.
+	//   Mit welchem Wert muss sie starten?
+	// - Für den Preis zum Mindestalter benötigen Sie den Index.
+	// - Wegen der Sortierung gilt am Ende der Preis des letzten
+	//   Mindestalters, das das Alter nicht übersteigt.
+
+	price := 0
+	for i, minAge := range minAges {
+		if age >= minAge {
+			price = prices[i]
+		}
+	}
+	return price
 }
